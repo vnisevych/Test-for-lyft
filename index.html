@@ -3,10 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Word Trimmer</title>
+	<style type="text/css">
+		body {
+			display: flex;
+			justify-content: center;
+		}
+
+		form {
+		    width: 40%;
+		    height: 200px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		input[type=text] {
+		    border: 1px solid #333;
+		    padding: 2px 4px;
+		    border-radius: 4px;
+		    height: 27px;
+		    margin: 0 12px 0 0;
+		}
+
+		input[type=submit] {
+		    border: unset;
+		    background: #1A73E8;
+		    border-radius: 4px;
+		    padding: 2px 23px;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    cursor: pointer;
+		    height: 35px;
+		    color: #fff;
+		    transition: background-color 0.5s ease;
+		}
+
+		input[type=submit]:hover {
+			background-color: #1A73B1;
+		}
+
+	</style>
 </head>
 <body>
 	<form id="form" action="http://localhost:3000/test" method="POST">
-		<input type="text" name="string_to_cut"/>
+		<input type="text" name="string_to_cut" placeholder="Type here">
 		<input type="submit" value="trim">
 	</form>
 </body>
